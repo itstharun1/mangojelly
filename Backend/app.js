@@ -9,7 +9,7 @@ const port = 3000;
 app.use(bodyParser.json());
 
 // Database connection
-mongoose.connect('mongodb://localhost:27017/comicBookStore').then(() => {
+mongoose.connect('mongodb+srv://tharunganjai:WmeyKEFmtyn6jGds@cluster0.hhcha.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then(() => {
     console.log('Connected to the database');
 }).catch((error) => {
     console.log('Database connection error:', error);
